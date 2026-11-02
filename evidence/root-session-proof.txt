@@ -1,0 +1,31 @@
+Root session: 2026-10-25T20:53:16Z
+========================================
+
+[FINAL] root chain: worker task + daemon cred borrow + capset
+
+ProbeRun
+sdp-mem probe 1.2.0.0, RID=MuselProbe01
+<CapabilitiesChecker>
+  <Version>1.0.0.0</Version>
+  <RawVersion>1.0.0.0</RawVersion>
+  <Caption>System Capabilities</Caption>
+  <Capabilities>
+    <Capability Id="http://tizen.org/feature/network.internet" Value="True" Type="System" />
+    <Capability Id="http://tizen.org/feature/network.wifi" Value="True" Type="System" />
+    <Capability Id="http://tizen.org/feature/multi_point_touch.pinch_zoom" Value="False" Type="System" />
+  </Capabilities>
+</CapabilitiesChecker>
+
+id: uid=0 gid=0 groups=29,44,201,901,1051,1901,6525,10001,10013,10014,10212,10501,10502,10503,10704,10705,10711,10901,10903,11103,11201 context="System"
+
+CapInh: 0000000000000000
+CapPrm: 0000003fffffffff
+CapEff: 0000003fffffffff
+CapBnd: 0000003fffffffff
+CapAmb: 0000000000000000
+
+/proc/cmdline:
+root=/dev/mmcblk0p16 rootfstype=vdfs rootwait no_console_suspend console=ttyS0,115200n8 quiet selp_enable=20143577 quiet_dump memory=0x33000000@0x50000000 memory=0x02e00000@0x6e600000 memory=0x20000000@0x8e400000 PX_MEM2=0x60000000@0xAE000000 PX_MEM=0x5000000@0xAC000000 MMAP_ADDR=0xA0000000 MMAP_SIZE=0x10400000 memory=0x400000@0x9a000000 memory=0x400000@0x9b000000 vb=0x9a100000@0x10000 macaddr=<redacted> loglevel=4 on_boot=7 auth= fail
+
+========================================
+uid=0 gid=0, CapPrm/CapEff=0000003fffffffff, SMACK context=System
